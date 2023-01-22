@@ -2,7 +2,7 @@
   "name": "parcel-transformer-minify-literals",
   "version": "1.0.0",
   "private": false,
-  "description": "Minify html, css literals for Parcel",
+  "description": "Minify html, css literals for ParcelJS",
   "keywords": [
     "parcel minify literals",
     "html literal",

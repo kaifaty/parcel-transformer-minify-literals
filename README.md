@@ -6,8 +6,9 @@ Under the hood used `minify-literals` from [Henry Gressmann](https://github.com/
 
 ## Usage example
 
+> .parcelrc
+
 ```JSON
-//.parcelrc
 
 {
   "extends": "@parcel/config-default",
