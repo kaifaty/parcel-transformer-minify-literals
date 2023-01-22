@@ -5,6 +5,7 @@ export default new Transformer({
   async transform({ asset }) {
     const source = await asset.getCode();
     const res = await minifyHTMLLiterals(source);
+    asset.setMap(res.map);
     asset.setCode(res.code);
     return [asset];
   },
