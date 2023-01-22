@@ -1,0 +1,13 @@
+{
+  "exclude": ["node_modules", "build"],
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "outDir": "./build",
+    "sourceMap": false,
+    "emitDeclarationOnly": false,
+    "rootDir": "./src",
+    "baseUrl": "."
+  },
+}

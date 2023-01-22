@@ -1,0 +1,53 @@
+{
+  "name": "parcel-transformer-minify-literals",
+  "version": "1.0.0",
+  "private": false,
+  "description": "Minify html, css literals for Parcel",
+  "keywords": [
+    "parcel minify literals",
+    "html literal",
+    "css literal",
+    "parcel lit minify",
+    "minify literals"
+  ],
+  "homepage": "https://github.com/kaifaty/parcel-transformer-minify-literals",
+  "bugs": {
+    "url": "https://github.com/kaifatyparcel-transformer-minify-literals/issues"
+  },
+  "license": "MIT",
+  "author": "kaifaty",
+  "sideEffects": false,
+  "main": "./build/index.js",
+  "source": "./src/index.ts",
+  "types": "./build/index.d.ts",
+  "files": [
+    "/build",
+    "/package.json",
+    "/README.md",
+    "/src"
+  ],
+  "scripts": {
+    "build1": "tsc",
+    "build": "parcel build"
+  },
+  "engines": {
+    "node": ">= 12.0.0",
+    "parcel": "^2.8.3"
+  },
+  "dependencies": {
+    "@parcel/plugin": "2.8.3",
+    "minify-literals": "0.2.0"
+  },
+  "targets": {
+    "build": {
+      "context": "node",
+      "distDir": "./build/",
+      "source": "./src/index.ts",
+      "isLibrary": true,
+      "outputFormat": "commonjs"
+    }
+  },
+  "devDependencies": {
+    "parcel": "^2.8.3"
+  }
+}
