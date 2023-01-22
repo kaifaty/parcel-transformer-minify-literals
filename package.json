@@ -1,6 +1,6 @@
 {
   "name": "parcel-transformer-minify-literals",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "private": false,
   "description": "Minify html, css literals for ParcelJS",
   "keywords": [
@@ -36,7 +36,11 @@
   },
   "dependencies": {
     "@parcel/plugin": "2.8.3",
-    "minify-literals": "0.2.0"
+    "clean-css": "^5.3.1",
+    "html-minifier-terser": "^7.1.0",
+    "magic-string": "^0.27.0",
+    "parcel": "^2.8.3",
+    "parse-literals": "^1.2.1"
   },
   "targets": {
     "build": {
@@ -48,6 +52,7 @@
     }
   },
   "devDependencies": {
-    "parcel": "^2.8.3"
+    "@types/clean-css": "^4.2.6",
+    "@types/html-minifier-terser": "^7.0.0"
   }
 }
